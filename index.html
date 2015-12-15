@@ -4,9 +4,7 @@
   <meta charset="UTF-8">
   <title>留联学设后台管理</title>
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-  <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-  <script src="semantic/dist/semantic.min.js"></script>
-
+  <script data-main="js/main.js" src="js/lib/require.js"></script>
 </head>
 <body>
   <div class="ui secondary  menu">
@@ -83,9 +81,8 @@
         </div>
     </div>
   </div>
-  <script src="js/search_hint.js"></script>
-  <script type="text/javascript">
-    
-  </script>
+<script type="text/javascript">
+  require(["modules/search_hint"]);
+</script>
 </body>
 </html>
