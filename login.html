@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="css/login.css" media="screen" title="no title" charset="utf-8">
   <script data-main="js/main.js" src="js/lib/require.js"></script>
   <script type="text/javascript">
-    require(["lib/localStorage"]);
+    // require(["js/data/user_seed.js"]);//若是在线部署请注释掉此条
+    require(["js/modules/login.js"]);
   </script>
 </head>
 <body>
@@ -28,17 +29,16 @@
         <div class="content">
           <p class="header"><a href="index.html">留联后台管理系统</a></p>
           <div class="description">
-              <form class="ui form">
+              <form class="ui form" method="post" action="index.html">
                 <div class="field">
                   <label>用户名</label>
-                  <input type="text" name="first-name" placeholder="请在此处输入用户名">
+                  <input type="text" name="username" placeholder="请在此处输入用户名">
                 </div>
                 <div class="field">
                   <label>密码</label>
-                  <input type="password" name="last-name" placeholder="请在此处输入密码">
+                  <input type="password" name="password" placeholder="请在此处输入密码">
                 </div>
-
-                <a class="ui button" href="index.html">登录</a>
+                <input  class="ui button" type="submit" name="submit" value="登录">
               </form>
           </div>
         </div>
